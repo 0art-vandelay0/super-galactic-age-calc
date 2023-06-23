@@ -9,9 +9,13 @@ describe('BirthdayYears', () => {
         const birthdayYears = new BirthdayYears(ageCalc, pastBirthday, futureBirthday);
     
         expect(birthdayYears.mercuryYear).toEqual(ageCalc.solarPlanetYears.mercury);
+        expect(birthdayYears.mercuryYear).toEqual(0.24);
         expect(birthdayYears.venusYear).toEqual(ageCalc.solarPlanetYears.venus);
+        expect(birthdayYears.venusYear).toEqual(0.62);
         expect(birthdayYears.marsYear).toEqual(ageCalc.solarPlanetYears.mars);
+        expect(birthdayYears.marsYear).toEqual(1.88);
         expect(birthdayYears.jupiterYear).toEqual(ageCalc.solarPlanetYears.jupiter);
+        expect(birthdayYears.jupiterYear).toEqual(11.86);
         expect(birthdayYears.pastBirthday).toEqual(pastBirthday);
         expect(birthdayYears.futureBirthday).toEqual(futureBirthday);
     });
