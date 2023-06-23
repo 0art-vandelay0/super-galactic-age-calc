@@ -16,4 +16,13 @@ describe('BirthdayYears', () => {
         expect(birthdayYears.futureBirthday).toEqual(futureBirthday);
     });
 
+    test('Should return the number of mercury years past birthday', () => {
+        const ageCalc = new AgeCalc(56);
+        const pastBirthday = 43;
+        const futureBirthday = 61;
+        const birthdayYears = new BirthdayYears(ageCalc, pastBirthday, futureBirthday);
+    
+        expect(birthdayYears.getYearsSincePastBirthday()).toEqual(54.16);
+    });
+
 });
