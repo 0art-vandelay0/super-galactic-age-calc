@@ -24,10 +24,24 @@ function handleEarthAgeForm(event) {
     document.querySelector('#response').append(pTag2);
     document.querySelector('#response').append(pTag3);
     document.querySelector('#response').append(pTag4);
-    document.querySelector('#responses-div').removeAttribute("class", "hidden");
+    document.querySelector('#planet-ages-div').removeAttribute("class", "hidden");
+    document.querySelector('#years-passed-form').removeAttribute("class", "hidden");
+}
+
+function handleYearsPassedForm(event) {
+    event.preventDefault();
+    document.querySelector('#response2').innerText = null;
+    // add years passed UI logic here
+}
+
+function handleYearsFutureForm(event) {
+    event.preventDefault();
+    document.querySelector('#response3').innerText = null;
+    // add years in the future UI logic here
 }
 
 window.addEventListener("load", function() {
     document.querySelector("#earthAge-form").addEventListener("submit", handleEarthAgeForm);
-    // document.querySelector("#age-passed-form").addEventListener("submit", handlePastBdayForm);
+    document.querySelector("#years-passed-form").addEventListener("submit", handleYearsPassedForm);
+    document.querySelector("#years-passed-form").addEventListener("submit", handleYearsFutureForm);
 });

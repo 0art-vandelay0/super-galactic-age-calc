@@ -13,6 +13,12 @@ body {
     background-blend-mode: hard-light;
 }
 
+h3 {
+    font-size: 30px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
 #planet-ages-response-div {
     display: flex;
     flex-direction: column;
@@ -39,23 +45,26 @@ ul#response {
 }
 
 button {
-    border: #e8ebf3;
-    color: whitesmoke;
-    background-color: #4b3470;
-    box-shadow: 2px 2px 4px rgba(196, 186, 186, 0.8);
+    border: .5px solid #6e558e;
+    color: #e8ebf3;
+    background-color: rgb(71, 62, 100);
+    box-shadow: 10px 10px 10px rgba(121, 121, 166, 0.5);
     border-radius: 10px;
     padding: 7px;
     margin: 10px;
+    cursor: pointer;
 }
 
 input {
     text-align: center;
     width: 80px;
-    color:#ac99cf;
-    border: 1px solid #4d75c4;
+    color:#d1bff4;
+    border: 1px solid #051637;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(158, 161, 255, 0.8);
+    box-shadow: 8px 8px 8px rgba(158, 161, 255, 0.5);
     padding: 5px;
     margin: 10px;
     background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top, #251550, #403452, #46375d, #58328f, #7b4a7fb9, #4e3398, #46375d, #393342, #2e0e88);
+    opacity: 0.9;
 }   
