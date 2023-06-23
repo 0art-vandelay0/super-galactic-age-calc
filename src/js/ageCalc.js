@@ -19,4 +19,9 @@ export default class AgeCalc {
         return Number(venusAge.toFixed(2));
     }
 
+    getMarsAge () {
+        const marsAge = this.earthAge / this.solarPlanetYears.mars;
+        return Number(marsAge.toFixed(2));
+    }
+
 }
