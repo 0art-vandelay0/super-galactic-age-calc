@@ -21,4 +21,9 @@ describe('AgeCalc', () => {
         expect(ageCalc.getMercuryAge()).toEqual(104.17);
     });
 
+    test('Should calculate age in Venus years from earth years', () => {
+        const ageCalc = new AgeCalc(25);
+        expect(ageCalc.getVenusAge()).toEqual(40.32);
+    });
+
 });
