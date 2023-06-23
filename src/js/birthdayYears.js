@@ -2,6 +2,7 @@ import AgeCalc from './ageCalc.js';
 
 export default class BirthdayYears {
     constructor(ageCalc, pastBirthday, futureBirthday) {
+        this.ageCalc = ageCalc;
         this.mercuryYear = ageCalc.solarPlanetYears.mercury;
         this.venusYear = ageCalc.solarPlanetYears.venus;
         this.marsYear = ageCalc.solarPlanetYears.mars;
@@ -10,8 +11,24 @@ export default class BirthdayYears {
         this.futureBirthday = futureBirthday;
     }
 
-    getMercuryYearsPastBirthday() {
-        const mercuryYearsPastBirthday = this.pastBirthday / this.mercuryYear;
-        return Number(mercuryYearsPastBirthday.toFixed(2));
+    getYearsSincePastBirthday() {
+        const earthYP = this.ageCalc.earthAge - this.pastBirthday;
+        const earthYearsPassed = Number(earthYP.toFixed(2));
+        const mercuryYP = earthYearsPassed / this.mercuryYear;
+        const mercuryYearsPassed = Number(mercuryYP.toFixed(2));
+        const venusYP = earthYearsPassed / this.venusYear;
+        const venusYearsPassed = Number(venusYP.toFixed(2));
+        const marsYP = earthYearsPassed / this.marsYear;
+        const marsYearsPassed = Number(marsYP.toFixed(2));
+        const jupiterYP = earthYearsPassed / this.jupiterYear;
+        const jupiterYearsPassed = Number(jupiterYP.toFixed(2));
+    
+        return {
+            earthYearsPassed,
+            mercuryYearsPassed,
+            venusYearsPassed,
+            marsYearsPassed,
+            jupiterYearsPassed,
+        };
     }
 }
