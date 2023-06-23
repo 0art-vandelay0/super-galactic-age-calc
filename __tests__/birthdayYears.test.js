@@ -1,4 +1,4 @@
-import BirthdayYears from '../src/birthdayYears';
+import BirthdayYears from '../src/js/birthdayYears.js';
 
 describe('BirthdayYears', () => {
 
