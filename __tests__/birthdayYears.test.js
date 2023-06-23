@@ -33,4 +33,9 @@ describe('BirthdayYears', () => {
         expect(mercuryBirthdays).toEqual(54.17);
     });
 
+    test('Should return the number of mars years past birthday', () => {
+        const marsBirthdays = birthdayYears.getYearsSincePastBirthday().marsYearsPassed;
+        expect(marsBirthdays).toEqual(6.91);
+    });
+
 });
