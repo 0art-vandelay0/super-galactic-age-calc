@@ -26,4 +26,9 @@ describe('AgeCalc', () => {
         expect(ageCalc.getVenusAge()).toEqual(40.32);
     });
 
+    test('Should calculate age in Mars years from earth years', () => {
+        const ageCalc = new AgeCalc(25);
+        expect(ageCalc.getMarsAge()).toEqual(13.30);
+    });
+
 });
