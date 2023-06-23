@@ -24,4 +24,9 @@ export default class AgeCalc {
         return Number(marsAge.toFixed(2));
     }
 
+    getJupiterAge () {
+        const jupiterAge = this.earthAge / this.solarPlanetYears.jupiter;
+        return Number(jupiterAge.toFixed(2));
+    }
+
 }
