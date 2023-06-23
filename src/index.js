@@ -1,7 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import ageCalc from './js/ageCalc.js';
+import AgeCalc from './js/ageCalc.js';
 
 // function handleTriangleForm(event) {
 //     event.preventDefault();
