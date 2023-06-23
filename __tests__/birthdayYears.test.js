@@ -43,8 +43,8 @@ describe('BirthdayYears', () => {
     });
 
     test('Should return the number of venus years to future birthday', () => {
-        const venusBirthdays = birthdayYears.getYearstoFutureBirthday().venusYearsToFuture;
-        expect(venusBirthdays).toEqual(8);
+        const venusBirthdays = birthdayYears.getYearsToFutureBirthday().venusYearsToFuture;
+        expect(venusBirthdays).toEqual(8.06);
     });
 
 });

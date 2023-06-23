@@ -31,4 +31,25 @@ export default class BirthdayYears {
             jupiterYearsPassed,
         };
     }
+
+    getYearsToFutureBirthday() {
+        const earthYTF = this.futureBirthday - this.ageCalc.earthAge;
+        const earthYearsToFuture  = Number(earthYTF.toFixed(2));
+        const mercuryYTF = earthYearsToFuture / this.mercuryYear;
+        const mercuryYearsToFuture = Number(mercuryYTF.toFixed(2));
+        const venusYTF = earthYearsToFuture / this.venusYear;
+        const venusYearsToFuture = Number(venusYTF.toFixed(2));
+        const marsYTF = earthYearsToFuture / this.marsYear;
+        const marsYearsToFuture = Number(marsYTF.toFixed(2));
+        const jupiterYTF = earthYearsToFuture / this.jupiterYear;
+        const jupiterYearsToFuture = Number(jupiterYTF.toFixed(2));
+    
+        return {
+            earthYearsToFuture,
+            mercuryYearsToFuture,
+            venusYearsToFuture,
+            marsYearsToFuture,
+            jupiterYearsToFuture,
+        };
+    }
 }
