@@ -14,4 +14,9 @@ export default class AgeCalc {
         return Number(mercuryAge.toFixed(2));
     }
 
+    getVenusAge () {
+        const venusAge = this.earthAge / this.solarPlanetYears.venus;
+        return Number(venusAge.toFixed(2));
+    }
+
 }
