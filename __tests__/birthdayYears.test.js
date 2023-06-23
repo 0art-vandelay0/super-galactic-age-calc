@@ -47,4 +47,9 @@ describe('BirthdayYears', () => {
         expect(venusBirthdays).toEqual(8.06);
     });
 
+    test('Should return the number of jupiter years to future birthday', () => {
+        const jupiterBirthdays = birthdayYears.getYearsToFutureBirthday().jupiterYearsToFuture;
+        expect(jupiterBirthdays).toEqual(0.42);
+    });
+
 });
