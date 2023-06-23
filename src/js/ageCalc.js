@@ -10,7 +10,8 @@ export default class AgeCalc {
     }
 
     getMercuryAge() {
-        return this.earthAge / this.solarPlanetYears.mercury;
+        const mercuryAge = this.earthAge / this.solarPlanetYears.mercury;
+        return Number(mercuryAge.toFixed(2));
     }
 
 }

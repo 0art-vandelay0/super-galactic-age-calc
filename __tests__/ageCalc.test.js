@@ -18,7 +18,7 @@ describe('AgeCalc', () => {
 
     test('Should calculate age in Mercury years from earth years', () => {
         const ageCalc = new AgeCalc(25);
-        expect(ageCalc.getMercuryAge()).toEqual(104);
+        expect(ageCalc.getMercuryAge()).toEqual(104.17);
     });
 
 });
