@@ -7,5 +7,10 @@ export default class AgeCalc {
             mars: 1.88,
             jupiter: 11.86
         };
-    } 
+    }
+
+    getMercuryAge() {
+        return this.earthAge / this.solarPlanetYears.mercury;
+    }
+
 }
