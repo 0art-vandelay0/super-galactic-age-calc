@@ -31,4 +31,9 @@ describe('AgeCalc', () => {
         expect(ageCalc.getMarsAge()).toEqual(13.30);
     });
 
+    test('Should calculate age in Jupiter years from earth years', () => {
+        const ageCalc = new AgeCalc(25);
+        expect(ageCalc.getJupiterAge()).toEqual(2.11);
+    });
+
 });
