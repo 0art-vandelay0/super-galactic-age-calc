@@ -21,8 +21,8 @@ describe('BirthdayYears', () => {
         const pastBirthday = 43;
         const futureBirthday = 61;
         const birthdayYears = new BirthdayYears(ageCalc, pastBirthday, futureBirthday);
-    
-        expect(birthdayYears.getYearsSincePastBirthday()).toEqual(54.16);
+        const mercuryBirthdays = birthdayYears.getYearsSincePastBirthday().mercuryYearsPassed;
+        expect(mercuryBirthdays).toEqual(54);
     });
 
 });
