@@ -1,5 +1,3 @@
-import AgeCalc from './ageCalc.js';
-
 export default class BirthdayYears {
     constructor(ageCalc, pastBirthday, futureBirthday) {
         this.ageCalc = ageCalc;
