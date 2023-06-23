@@ -32,14 +32,19 @@ describe('BirthdayYears', () => {
         birthdayYears = new BirthdayYears(ageCalc, pastBirthday, futureBirthday);
     });
 
-    test('Should return the number of mercury years past birthday', () => {
+    test('Should return the number of mercury years from past birthday', () => {
         const mercuryBirthdays = birthdayYears.getYearsSincePastBirthday().mercuryYearsPassed;
         expect(mercuryBirthdays).toEqual(54.17);
     });
 
-    test('Should return the number of mars years past birthday', () => {
+    test('Should return the number of mars years from past birthday', () => {
         const marsBirthdays = birthdayYears.getYearsSincePastBirthday().marsYearsPassed;
         expect(marsBirthdays).toEqual(6.91);
+    });
+
+    test('Should return the number of venus years to future birthday', () => {
+        const venusBirthdays = birthdayYears.getYearstoFutureBirthday().venusYearsToFuture;
+        expect(venusBirthdays).toEqual(8);
     });
 
 });
