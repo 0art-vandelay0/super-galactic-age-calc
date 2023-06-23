@@ -31,7 +31,7 @@
 
 ## **Description**
 
-Enter the size of pizza you want along with any and all toppings you want to add. Click the "Submit Order" button and your order details will appear on the screen. If you want to change your order, click "Adjust Order" or click "Checkout" to checkout with your current total and pizza of choice.
+Enter your current age and click the "Beam Me Up!" button and your age on 4 other planets will appear below. You can enter a previous birthday to to calculate how many years have passed since that birthday on each planet as well as calculate a future birthday.
 
 ## **Setup/Installation Requirements** &#x1F4BB;
 
@@ -48,12 +48,6 @@ Enter the size of pizza you want along with any and all toppings you want to add
     The webpage will open in your browser at port 8080<br>
     - Enter your age in Earth Years as a whole number
     - Click 'Beam Me Up'
-
-### **Directly in Browser**
-
-- Clone this repository to your local machine.
-- Navigate to your browser
-- File > Open File > Choose {folder you just cloned} > open index.html
 
 ## **Known Bugs**
 
